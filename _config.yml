@@ -27,3 +27,15 @@ team:
     img: /assets/imgs/team/pexels-photo-450271.jpeg
     position: Designer
     bio: Look at me smile hahahaha. I like to design pretty things or some other info about me and what I do at this company or startup.
+  - name: David
+    img: /assets/imgs/team/pexels-photo-91227.jpeg
+    position: CEO
+    bio: "I'm not a real person. Well, I am but I'm not Bob Smith, CEO of this random site. This picture is from Pexel."
+  - name: Patrick
+    img: /assets/imgs/team/pexels-photo-324658.jpeg
+    position: CTO
+    bio: My bio is the longest. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+  - name: Phil
+    img: /assets/imgs/team/pexels-photo-450271.jpeg
+    position: Designer
+    bio: Look at me smile hahahaha. I like to design pretty things or some other info about me and what I do at this company or startup.

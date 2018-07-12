@@ -1,7 +1,7 @@
 # Site settings
-title: Starter Template for Jekyll
-email: youremail@yourdomain.net
-description: Built using Filament Group's Load CSS and Load JS and http://jch.penibelst.de/'s html compressor for optimising speed.
+title: Center for Gravitation, Cosmology and Astrophysics
+email: cgca-info@uwm.edu
+description: Based on Thauvette's simple template and built using Filament Group's Load CSS and Load JS and http://jch.penibelst.de/'s html compressor for optimising speed.
 type: website
 image: /assets/imgs/octojekyll.jpg
 host: 0.0.0.0
@@ -15,6 +15,11 @@ sass:
   style: compressed
 
 # People in the Center
+#
+# Each person a name, emailname, emaildomain, position, and phone
+# specified here and an image file named emailname.png in 
+# assets/imgs/people
+# 
 team:
   - name: Bruce Allen
     emailname: ballen
@@ -43,6 +48,11 @@ team:
     phone: 414-229-7274
 
 # Past members of the center
+#
+# Each person a name, emailname, emaildomain, and position
+# specified here and an image file named emailname.png in 
+# assets/imgs/people
+# 
 former:
   - name: Luis Anchordoqui
     emailname: doqui

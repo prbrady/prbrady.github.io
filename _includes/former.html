@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    {% for t in site.former %}
+    <div class="col-lg-3 team-member">
+      <img class="rounded-circle" src="assets/imgs/team/{{t.emailname}}.png" alt="Generic placeholder image" width="120" height="120">
+      <h4>{{t.name}}</h4>
+      <p>{{t.position}}</p>
+      <p>{{t.phone}}</p>
+      <p><a class="btn btn-secondary" href="javascript:address('{{t.emailname}}', '{{t.emaildomain}}')" role="button">Email »</a></p>
+    </div>
+    {% endfor %}
+  </div>
+</div>

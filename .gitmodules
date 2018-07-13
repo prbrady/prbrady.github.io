@@ -1,0 +1,3 @@
+[submodule "assets/python/ads-examples"]
+	path = assets/python/ads-examples
+	url = https://github.com/dlakaplan/ads-examples.git

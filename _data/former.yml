@@ -1,0 +1,378 @@
+# Past members of the center
+#
+# Each person a name, emailname, emaildomain, and position
+# specified here and an image file named emailname.png in 
+# assets/imgs/people
+# 
+- name:  Ivan Agullo
+  emailname:  ivan
+  position:  Postdoc
+- name:  Xavier Amador
+  emailname:  xavierThor
+  position:  Associate Scientist
+- name:  Luis Anchordoqui
+  emailname:  doqui
+  position:  Assoc. Professor
+- name:  Melissa Anholm
+  emailname:  manholm
+  position:  Grad Student
+- name:  Paul Armor
+  emailname:  parmor
+  position:  System Administrator
+- name:  R. Balasubramanian
+  emailname:  bala
+  position:  Postdoc
+- name:  Danielle Berg
+  emailname:  dberg
+  position:  Postdoc
+- name:  Eddie Biggs
+  emailname:  EddieBiggs
+  position:  Undergrad
+- name:  Rahul Biswas
+  emailname:  rbiswas
+  position:  Grad Student
+- name:  Sukanta Bose
+  emailname:  bose
+  position:  Grad Student
+- name:  Matt Brinson
+  emailname:  mbrinson
+  position:  Grad Student
+- name:  Duncan Brown
+  emailname:  duncan
+  position:  Grad Student
+- name:  Jordi Burguet-Castell
+  emailname:  jburguet
+  position:  Postdoc
+- name:  Robert  Caldwell
+  emailname:  blank
+  position:  Grad Student
+- name:  
+  emailname:  blank
+  position:  
+- name:  Kipp Cannon
+  emailname:  kipp
+  position:  
+- name:  Philip A. Carinhas
+  emailname:  blank
+  position:  
+- name:  Sara Gil Casanova
+  emailname:  sgil
+  position:  
+- name:  Sarah Caudill
+  emailname:  caudill
+  position:  Postdoc
+- name:  Sydney Chamberlin
+  emailname:  sydney
+  position:  Grad Student
+- name:  Demian Cho
+  emailname:  dcho
+  position:  Grad Student
+- name:  Jessica Clayton
+  emailname:  jclayton
+  position:  Postdoc
+- name:  Teviet Creighton
+  emailname:  teviet
+  position:  Postdoc
+- name:  Steve Croft
+  emailname:  croft
+  position:  Postdoc
+- name:  Luiz DaSilva
+  emailname:  ldasilva
+  position:  Grad Student
+- name:  Megan DeCesar
+  emailname:  mdecesar
+  position:  Postdoc
+- name:  Federico Degen
+  emailname:  Degen
+  position:  Postdoc
+- name:  Justin Ellis
+  emailname:  jellis
+  position:  Grad Student
+- name:  Stephen Fairhurst
+  emailname:  sfairhur
+  position:  Postdoc
+- name:  Marc Favata
+  emailname:  mfavata
+  position:  Postdoc
+- name:  Kevin Flasch
+  emailname:  kflasch
+  position:  Grid Computing Conslt
+- name:  Ford
+  emailname:  blank
+  position:  Postdoc
+- name:  Nick Fotopoulos
+  emailname:  nvf
+  position:  Grad Student
+- name:  
+  emailname:  blank
+  position:  
+- name:  Stefanos Giampanis
+  emailname:  stefanos
+  position:  Postdoc
+- name:  Matthew Glenz
+  emailname:  mglenz
+  position:  Grad Student
+- name:  Lisa Goggin
+  emailname:  lgoggin
+  position:  Postdoc
+- name:  David Hammer
+  emailname:  hammerd
+  position:  Einstein @ Home System Admin.
+- name:  Kara Hendrickson
+  emailname:  khendrickson
+  position:  Travel Administrator
+- name:  Wensheng Hua
+  emailname:  hua
+  position:  Grad Student
+- name:  Xing Huang
+  emailname:  xing
+  position:  Graduate Student
+- name:  
+  emailname:  blank
+  position:  Graduate Student
+- name:  Brennan Hughey
+  emailname:  brennan
+  position:  Postdoc
+- name:  Marie Huynh
+  emailname:  mhuynh
+  position:  IdM and CMP Architect and Programmer
+- name:  Yousuke Itoh
+  emailname:  itoh
+  position:  Vis. Scientist
+- name:  Ian Jack
+  emailname:  blank
+  position:  NCK
+- name:  Gareth Johnson
+  emailname:  gjohnson
+  position:  Graphic Artist
+- name:  Atish Kamble
+  emailname:  atish
+  position:  Postdoc
+- name:  Ramanpreet Kaur
+  emailname:  raman
+  position:  Visiting Postdoc
+- name:  Tobias Keidl
+  emailname:  toby
+  position:  
+- name:  Michelle Kellom
+  emailname:  mkellom
+  position:  Administrative Assistant
+- name:  Jeff Kline
+  emailname:  jkline
+  position:  Postdoc
+- name:  Ron Kobiske
+  emailname:  blank
+  position:  Postdoc
+- name:  Ralf Kotulla
+  emailname:  ralf
+  position:  Postdoc
+- name:  Uwe Kronholm
+  emailname:  usk
+  position:  Postdoc
+- name:  Koutarou Kyutoku
+  emailname:  kkyutoku
+  position:  Postdoc
+- name:  Ben Lackey
+  emailname:  blackey
+  position:  Grad Student
+- name:  Astrid Lamberts
+  emailname:  alamberts
+  position:  Postdoc
+- name:  Ryan Lang
+  emailname:  rlang
+  position:  Postdoc
+- name:  Jennifer Lassiter
+  emailname:  jlassiter
+  position:  Administrative Assistant
+- name:  
+  emailname:  blank
+  position:  
+- name:  Todd K. Leen
+  emailname:  blank
+  position:  
+- name:  Tom Linz
+  emailname:  tlinz
+  position:  Grad Student
+- name:  Keith Lockich
+  emailname:  blank
+  position:  Grad Student
+- name:  Morgan Lynch
+  emailname:  mlynch
+  position:  Grad Student
+- name:  Saikat Ray Majumder
+  emailname:  saikat
+  position:  Grad Student
+- name:  Kaleb Maraccini
+  emailname:  kmaraccini
+  position:  Undergrad
+- name:  Harris Markakis
+  emailname:  cmarkakis
+  position:  Grad Student
+- name:  Daniel Mashburn
+  emailname:  dmashburn
+  position:  Grad Student
+- name:  Mayer
+  emailname:  blank
+  position:  NCK
+- name:  Laura Mersini
+  emailname:  blank
+  position:  Grad Student
+- name:  Eirini Messaritaki
+  emailname:  emessarit
+  position:  Postdoc
+- name:  Brian Moe
+  emailname:  bmoe
+  position:  Programming Conslt
+- name:  
+  emailname:  blank
+  position:  
+- name:  Sharon Morsink
+  emailname:  blank
+  position:  Postdoc
+- name:  Debnandini Mukherjee
+  emailname:  dmukherjee
+  position:  Grad Student
+- name:  Daniel Murray
+  emailname:  dmurray
+  position:  Grad Student
+- name:  Stephen M Nelson
+  emailname:  snelson
+  position:  Grad Student
+- name:  Laura Nuttall
+  emailname:  lnuttall
+  position:  Postdoc
+- name:  Evan Ochsner
+  emailname:  evan
+  position:  Assoc. Scientist
+- name:  Ross Oldenburg
+  emailname:  rosso
+  position:  System Administrator
+- name:  Richard O'Shaughnessy
+  emailname:  richard
+  position:  Postdoc
+- name:  Adrian Ottewill
+  emailname:  ottewill
+  position:  Postdoc
+- name:  Ben Owen
+  emailname:  owen
+  position:  Postdoc
+- name:  
+  emailname:  blank
+  position:  NCK
+- name:  Tom Paul
+  emailname:  tpaul
+  position:  Postdoc
+- name:  Kendra Pilon
+  emailname:  kpilon
+  position:  Travel Administrator
+- name:  
+  emailname:  blank
+  position:  NCK
+- name:  Stefanie Pinnow
+  emailname:  stefanie
+  position:  Business Specialist
+- name:  Holger Pletsch
+  emailname:  hpletsch
+  position:  Grad Student
+- name:  Larry Price
+  emailname:  lprice
+  position:  Postdoc
+- name:  Hong Qi
+  emailname:  hqi
+  position:  Grad Student
+- name:  Alpan Raval
+  emailname:  blank
+  position:  Postdoc
+- name:  Jocelyn Read
+  emailname:  jsread
+  position:  Grad Student
+- name:  
+  emailname:  blank
+  position:  
+- name:  
+  emailname:  blank
+  position:  
+- name:  Laleh Sadeghian
+  emailname:  lsadeghian
+  position:  Postdoc
+- name:  Abhay Shah
+  emailname:  ashah
+  position:  Grad Student
+- name:  Alec Sheperd
+  emailname:  asheperd
+  position:  Undergrad, Sys Admin
+- name:  Joe Simon
+  emailname:  jsimon
+  position:  Grad Student
+- name:  Greg Skelton
+  emailname:  gskelton
+  position:  System Administrator
+- name:  
+  emailname:  blank
+  position:  
+- name:  Renee Spiewak
+  emailname:  rspiewak
+  position:  LTE
+- name:  Branson Stephens
+  emailname:  branson
+  position:  Assoc. Scientist
+- name:  
+  emailname:  blank
+  position:  
+- name:  
+  emailname:  blank
+  position:  
+- name:  Swapnil Tripathi
+  emailname:  swapnil
+  position:  Grad Student
+- name:  Antonios Tsokaros
+  emailname:  blank
+  position:  Grad Student
+- name:  Koh Ueno
+  emailname:  blank
+  position:  Postdoc
+- name:  Alex Urban
+  emailname:  aurban
+  position:  Grad Student
+- name:  Koji Uryu
+  emailname:  blank
+  position:  Postdoc
+- name:  Ruslan Vaulin
+  emailname:  vaulin
+  position:  Postdoc
+- name:  Brian J Vlcek
+  emailname:  brian
+  position:  Postdoc
+- name:  
+  emailname:  blank
+  position:  
+- name:  Les Wade
+  emailname:  les
+  position:  Grad Student
+- name:  Maddie Wade
+  emailname:  maddie
+  position:  Grad Student
+- name:  Lindsey Whiting
+  emailname:  lwhiting
+  position:  Grad Student
+- name:  
+  emailname:  blank
+  position:  NCK
+- name:  
+  emailname:  blank
+  position:  
+- name:  Randy Wolfmeyer
+  emailname:  rwolfmeyer
+  position:  Postdoc
+- name:  Darren Woods
+  emailname:  darren
+  position:  Grad Student
+- name:  Shin Yoshida
+  emailname:  blank
+  position:  
+- name:  Peng Peng Yu
+  emailname:  blank
+  position:  Postdoc
+- name:  Yang Zhang
+  emailname:  blank
+  position:  NCK

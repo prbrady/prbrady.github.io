@@ -1,7 +1,7 @@
 import ads
 import requests
 import math
-import json,os,datetime
+import json,os,datetime,shutil,sys
 from optparse import OptionParser
 
 # use like:
@@ -128,6 +128,9 @@ parser.add_option('-r','--reload',default=False,dest='reload',
 parser.add_option('-d','--directory',
                   dest='directory',default='./',
                   help='Output directory [default=%default]')
+parser.add_option('-i','--imagedirectory',
+                  dest='imagedirectory',default='./assets/imgs/publications/',
+                  help='Image output directory [default=%default]')
 parser.add_option('-y','--years',
                   dest='years',default=5,
                   help='Number of years for recent list [default=%default]')
@@ -191,17 +194,6 @@ for i in xrange(0,len(bibcodes_toprint),numbertograb):
 content=content.replace('abs/arXiv:','abs/')
 
 try:
-    with open('%s/../templates/publications_template.html' % runpath) as f:
-        template=f.read()
-except IOError:
-    print('Error reading publication template from %s' % ('%s/../templates/publications_template.html' % runpath))
-try:
-    with open('%s/../templates/footer.html' % runpath) as f:
-        footer=f.read()
-except IOError:
-    print('Error reading footer from %s' % ('%s/../templates/footer.html' % runpath))
-
-try:
     with open(metrics_file) as f:
         lines=f.readlines()
 except IOError:
@@ -214,6 +206,13 @@ for line in lines:
     if line.startswith('H Index'):
         h_index=int(line.split()[-2])
 
+try:
+    shutil.copyfile(metrics_plot, os.path.join(options.imagedirectory,os.path.split(metrics_plot)[-1]))
+except:
+    print('Unable to copy file %s to %s' % (metrics_plot,
+                                            options.imagedirectory))
+    sys.exit(1)
+    
     
 outfile=os.path.join(options.directory,'publications.html')
 try:
@@ -221,12 +220,24 @@ try:
 except IOError:
     print('Unable to write %s' % outfile)
 
-f.write(template)
+f.write("""---
+layout: content
+title: CGCA - Publications
+description: Recent CGCA Publications
+heading: Publications
+lead: 
+---    
 
-f.write("""<div class="container marketing">
+    <main role="main">
+      
+<div class="container marketing">
 <h3 class="featurette-heading">Recent Publications: <span
 class="text-muted">(last %d years)</span></h3>\n\n""" % options.years)
-f.write('<a href="%s"><img class="float-right img-responsive" width="50%%" src="%s"></a>\n' % (metrics_plot,metrics_plot))
+f.write('<a href="%s/%s"><img class="float-right img-responsive" width="50%%" src="%s/%s"></a>\n' % (options.imagedirectory,
+                                                                                                     os.path.split(metrics_plot)[-1],
+                                                                                                     options.imagedirectory,
+                                                                                                     os.path.split(metrics_plot)[-1]))
+                                                                                                  
 f.write('Total papers: %d<br>\n' % number_of_papers)
 f.write('Total citations: %d<br>\n' % total_citations)
 f.write('H-index: %d<br>\n' % h_index)
@@ -236,7 +247,9 @@ f.write('<p><small><span class="text-muted">Publications via <a href="https://ui
 f.write('<ol>\n')
 f.write(content)
 f.write('</ol>\n')
-f.write(footer)
+f.write("""<!-- /END THE FEATURETTES -->       
+     </div><!-- /.container -->""")
 f.close()    
 
     
+sys.exit(0)

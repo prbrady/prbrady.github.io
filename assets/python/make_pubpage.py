@@ -5,7 +5,7 @@ import json,os,datetime,shutil,sys
 from optparse import OptionParser
 
 # use like:
-# python python/make_pubpage.py -l cgca -d ./
+# python python/make_pubpage.py -l cgca -d _includes/
 
 # look at https://github.com/adsabs/ads-examples/tree/master/library_csv
 
@@ -126,7 +126,7 @@ parser.add_option('-r','--reload',default=False,dest='reload',
                   action='store_true',
                   help='Force reload')
 parser.add_option('-d','--directory',
-                  dest='directory',default='./',
+                  dest='directory',default='_includes/',
                   help='Output directory [default=%default]')
 parser.add_option('-i','--imagedirectory',
                   dest='imagedirectory',default='./assets/imgs/publications/',
@@ -220,15 +220,7 @@ try:
 except IOError:
     print('Unable to write %s' % outfile)
 
-f.write("""---
-layout: content
-title: CGCA - Publications
-description: Recent CGCA Publications
-heading: Publications
-lead: 
----    
-
-    <main role="main">
+f.write("""<main role="main">
       
 <div class="container marketing">
 <h3 class="featurette-heading">Recent Publications: <span

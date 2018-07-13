@@ -11,7 +11,7 @@
     <ul class="nav navbar-nav mr-auto">
         {% assign links = site.data.navigation %}
         {% for link in links %}
-            {% assign class ='nav-item' %}
+            {% assign class = 'nav-item' %}
             {% if page.url contains link.url %}
                 {% assign class = 'nav-item active' %}
             {% endif %}

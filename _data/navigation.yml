@@ -1,3 +1,7 @@
+# modified from
+# https://mycyberuniverse.com/web/jekyll-bootstrap-dynamic-navigation-highlighting-active-element.html
+# I found that I needed the URL on the top-level items to contain all of the items below so that
+# the top item would be active
 - title: Home
   url: /index.html
 - title: About Us
@@ -13,6 +17,7 @@
     - title: Contact us
       url: /contact.html
 - title: People
+  url: /people.html /faculty.html /directory.html /former_members.html
   sublinks:
     - title: Members
       url: /people.html
@@ -23,13 +28,14 @@
     - title: Former members
       url: /former_members.html
 - title: News & Events
+  url: /seminars.html /news.html
   sublinks:
     - title: Seminars
       url: /seminars.html
     - title: Recent news
       url: /news.html
 - title: Research
-  url: /research.html
+  url: /research.html /publications.html /books.html /datacenter.html
   sublinks:
     - title: Overview
       url: /research.html
@@ -46,6 +52,7 @@
     - title: Conference Room
       url: /conference_room.html
 - title: For the Public
+  url: /public.html /maker.html
   sublinks:
     - title: Overview
       url: /public.html

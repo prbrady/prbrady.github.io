@@ -1,0 +1,62 @@
+- title: Home
+  url: /index.html
+- title: About Us
+  url: /contact.html
+  sublinks:
+    - title: Equity and Diversity
+      url: /equity.html
+    - title: For visitors
+      url: /visitors.html
+    - title: Positions
+      url: /#
+    - title: separator
+    - title: Contact us
+      url: /contact.html
+- title: People
+  sublinks:
+    - title: Members
+      url: /people.html
+    - title: Faculty
+      url: /faculty.html
+    - title: Directory
+      url: /directory.html
+    - title: Former members
+      url: /former_members.html
+- title: News & Events
+  sublinks:
+    - title: Seminars
+      url: /seminars.html
+    - title: Recent news
+      url: /news.html
+- title: Research
+  url: /research.html
+  sublinks:
+    - title: Overview
+      url: /research.html
+    - title: Publications
+      url: /publications.html
+    - title: Books
+      url: /books.html
+    - title: Data Center
+      url: /datacenter.html
+- title: Internal
+  sublinks:
+    - title: Wiki
+      url: http://www.lsc-group.phys.uwm.edu/wiki/
+    - title: Conference Room
+      url: /conference_room.html
+- title: For the Public
+  sublinks:
+    - title: Overview
+      url: /public.html
+    - title: MakerFaire Milwaukee
+      url: /maker.html
+    - title: CoffeeShop Astrophysics
+      url: http://www.cgca.uwm.edu/coffee/
+    - title: Manfred Olson Planetarium
+      url: http://uwm.edu/planetarium/
+    - title: Pulsar Search Collaboratory
+      url: http://pulsarsearchcollaboratory.com/home/about/
+    - title: Einstein@Home
+      url: http://einstein.phys.uwm.edu/
+      

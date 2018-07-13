@@ -1,0 +1,47 @@
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="index.html">
+  <img src="/assets/imgs/logos/cgca-rev-transparent.png" height="50" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+
+<!-- see -->
+<!-- https://mycyberuniverse.com/web/jekyll-bootstrap-dynamic-navigation-highlighting-active-element.html -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="nav navbar-nav mr-auto">
+        {% assign links = site.data.navigation %}
+        {% for link in links %}
+            {% assign class ='nav-item' %}
+            {% if page.url contains link.url %}
+                {% assign class = 'nav-item active' %}
+            {% endif %}
+            {% if link.sublinks %}
+                <li class="dropdown {{ class }}">
+                    <a href="{{ site.baseurl }}{{ link.url }}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} <span class="caret"></span></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        {% for sublink in link.sublinks %}
+                            {% if sublink.title == 'separator' %}
+                                <div class="dropdown-divider"></div>
+                            {% else %}
+                                <a class="dropdown-item" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </li>
+            {% else %}
+                <li class="{{ class }}">
+                    <a class="nav-link" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+
+
+    </ul>
+    <a class="navbar-brand" href="https://twitter.com/UWMCGCA">
+    <img src="/assets/imgs/logos/twitter_transparent.png" width="25" height="25" alt="Twitter"></a>
+    <a class="navbar-brand" href="https://www.facebook.com/UWMCGCA">
+    <img src="/assets/imgs/logos/facebook.png" width="25" height="25" alt="Facebook"></a>
+        <button type="button" class="btn btn-warning">Give</button>
+
+  </div>
+</nav>

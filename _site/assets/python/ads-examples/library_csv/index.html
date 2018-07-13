@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+  <title>Examples of how to use the ADS API</title>
+  
+
+  <meta charset="utf-8" / />
+
+  <meta property="og:url" content="http://0.0.0.0:4000/assets/python/ads-examples/library_csv/" />
+
+  <meta content="Center for Gravitation, Cosmology and Astrophysics" property="og:site_name">
+  
+    <meta content="website" property="og:type">
+  
+  
+    <meta content="Examples of how to use the ADS API" property="og:title">
+  
+  
+    <meta content="" property="og:description">
+  
+  
+    <meta content="/assets/imgs/octojekyll.jpg" property="og:image">
+  
+
+  <script>
+  !function(e){"use strict";var t=function(t,n,r){function o(e){if(i.body)return e();setTimeout(function(){o(e)})}function a(){d.addEventListener&&d.removeEventListener("load",a),d.media=r||"all"}var l,i=e.document,d=i.createElement("link");if(n)l=n;else{var s=(i.body||i.getElementsByTagName("head")[0]).childNodes;l=s[s.length-1]}var u=i.styleSheets;d.rel="stylesheet",d.href=t,d.media="only x",o(function(){l.parentNode.insertBefore(d,n?l:l.nextSibling)});var f=function(e){for(var t=d.href,n=u.length;n--;)if(u[n].href===t)return e();setTimeout(function(){f(e)})};return d.addEventListener&&d.addEventListener("load",a),d.onloadcssdefined=f,f(a),d};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this),function(e){if(e.loadCSS){var t=loadCSS.relpreload={};if(t.support=function(){try{return e.document.createElement("link").relList.supports("preload")}catch(e){return!1}},t.poly=function(){for(var t=e.document.getElementsByTagName("link"),n=0;n<t.length;n++){var r=t[n];"preload"===r.rel&&"style"===r.getAttribute("as")&&(e.loadCSS(r.href,r,r.getAttribute("media")),r.rel=null)}},!t.support()){t.poly();var n=e.setInterval(t.poly,300);e.addEventListener&&e.addEventListener("load",function(){t.poly(),e.clearInterval(n)}),e.attachEvent&&e.attachEvent("onload",function(){e.clearInterval(n)})}}}(this);
+</script>
+
+
+
+  <link rel="preload" href="/assets/css/main.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/css/main.css"></noscript>
+
+  <!--<link rel="preload" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/sandstone/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">-->
+  <!--<noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/sandstone/bootstrap.min.css"></noscript>-->
+
+  <link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"></noscript>
+
+
+
+  <!--  Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <!-- The below color will change the browser bar color on most mobile browsers -->
+  <meta name="theme-color" content="#ffffff">
+
+<script src="http://0.0.0.0:35729/livereload.js"></script></head>
+
+  <style>
+  body{width: 100%;overflow-x: hidden;}
+</style>
+
+  <body>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="index.html">
+  <img src="/assets/imgs/logos/cgca-rev-transparent.png" height="50" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/index.html">Home</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About Us
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/equity.html">Equity and diversity</a>
+          <a class="dropdown-item" href="/visitors.html">For visitors</a>
+          <a class="dropdown-item" href="/#">Positions</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/contact.html">Contact us</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          People
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="/people.html">Members</a>
+          <a class="dropdown-item" href="/faculty.html">Faculty</a>
+          <a class="dropdown-item" href="/directory.html">Directory</a>
+<!--          <a class="dropdown-item" href="#">LIGO</a>-->
+          <a class="dropdown-item" href="/former_members.html">Former members</a>
+        </div>
+      </li>
+		 <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          News & Events
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/seminars.html">Seminars</a>
+          <a class="dropdown-item" href="/news.html">Recent news</a>
+        </div>
+      </li>
+		 <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Research
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/research.html">Overview</a>
+          <a class="dropdown-item"
+href="/publications.html">Publications</a>
+          <a class="dropdown-item" href="/books.html">Books</a>
+          <a class="dropdown-item" href="/datacenter.html">Data Center</a>
+        </div>
+      </li>
+		<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Internal
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="http://www.lsc-group.phys.uwm.edu/wiki/">Wiki</a>
+          <a class="dropdown-item" href="/conference_room.html">Conference Room</a>
+        </div>
+      </li>
+      <!-- 		 <li class="nav-item"> -->
+      <!--   <a class="nav-link" href="#">Students</a> -->
+      <!-- </li> -->
+		<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Public
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/public.html">Overview</a>
+<a class="dropdown-item" href="/maker.html">MakerFaire Milwaukee</a>
+<a class="dropdown-item" href="http://www.cgca.uwm.edu/coffee/">CoffeeShop Astrophysics</a>
+          <a class="dropdown-item"
+href="http://uwm.edu/planetarium/">Manfred Olson Planetarium</a>
+          <a class="dropdown-item"
+    href="http://pulsarsearchcollaboratory.com/home/about/">Pulsar
+    Search Collaboratory</a>
+<a class="dropdown-item" href="http://einstein.phys.uwm.edu/">Einstein@Home</a>
+</li>
+    </ul>
+    <a class="navbar-brand" href="https://twitter.com/UWMCGCA">
+    <img src="/assets/imgs/logos/twitter_transparent.png" width="25" height="25" alt="Twitter"></a>
+    <a class="navbar-brand" href="https://www.facebook.com/UWMCGCA">
+    <img src="/assets/imgs/logos/facebook.png" width="25" height="25" alt="Facebook"></a>
+        <button type="button" class="btn btn-warning">Give</button>
+
+  </div>
+</nav>
+
+          <div class="jumbotron text-center" style="margin-bottom:0">
+        <div class="container">
+	  <h1><small>The Leonard E Parker</small></h1>
+          <h1>Center for Gravitation, Cosmology & Astrophysics</h1>
+	  <h2><small>at the University of Wisconsin-Milwaukee</small></h2>
+        </div>
+      </div>
+
+    <h1 id="examples-of-how-to-use-the-ads-api">Examples of how to use the ADS API</h1>
+
+<h2 id="private-libraries-export-to-csv-file">Private libraries export to CSV file</h2>
+
+<p>Some users may have a need to extract their private libraries into a CSV format.
+Currently, there is no intention of fulfiling this request within the user
+interface, but it is possible to do using the API.</p>
+
+<p>Simply run this command line tool:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>python lib_2_csv.py --save-to-file myfile.csv
+
+  Collecting library: Test <span class="o">[</span>jOWhy4PdRBu_wyUoBuGR1g]
+  Pagination 1 out of 5
+  Pagination 2 out of 5
+  Pagination 3 out of 5
+  Pagination 4 out of 5
+  Pagination 5 out of 5
+  Collecting library: Untitled Library 1 <span class="o">[</span>WenstVArTeq2m6qheH-0eQ]
+  Collecting library: ADS Classic Library <span class="o">[</span>5OFj8pgBTKqup1WMkAA7BA]
+  Pagination 1 out of 1
+  Collecting library: No Description <span class="o">[</span>UvwG9EedQJem6gZ4Wd5g3A]
+  Pagination 1 out of 1
+</code></pre>
+</div>
+
+<p>This will result in some output like the following:</p>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>more private_libraries.csv
+  <span class="c">#name,num_documents,bibcodes</span>
+  Test,102,2016LPI....47.2774E	2016ApJ...819..137K	2016NatGe...9..174E	2016ASSP...42...91E	2015E&amp;SS....2..435E	2015Natur.527...3
+   1E	2015DPS....4721813E	2015EPSC...10...75E	2015JChPh.143k4110E	2015arXiv150506493E	2015arXiv150506433E	2015A&amp;C....10...6
+   1E	2015MNRAS.446.4239E	2015GMD.....8..261E	2014AcAau.105..511E	2014AGUFM.G31A0383E	2014AGUFM.S33F4902E	2014GMDD....7.438
+   3E	2014arXiv1404.5552E	2014PNAS..111.3239E	2014A&amp;A...562A.100E	2014GCN..15903...1E	2014GCN..15829...1E	2014GCN..15904...
+   1E	2014PhDT........18E	2014arXiv1401.3013E	2014GCN..15965...1E	2013AGUFMNH43D..04E	2013AGUFM.C43C0685E	2013AGUFMGC31D..0
+   2E	2013AGUFM.T42A..03E	2013arXiv1312.5099E	2013arXiv1312.2333E	2013BpJ...105.1935E	2013arXiv1311.6505E	2013JGRB..118.562
+   5E	2013A&amp;A...556A..23E	2013arXiv1308.5520E	2013Nanos...5.6662E	2013PhRvC..87e4622E	2013Sci...340..556E	2013JGRB..118.161
+   9E	2013SPIE.8578E..0AE	2013PLoSO...857400E	2013GCN..14898...1E	2012AGUFM.T14A..07E	2012AGUFM.C23C0669E	2012PMB....57.828
+   5E	2012AcAau..78...26E	2012AcAau..78...20E	2012EnST...46.9681E	2012OptL...37.2571E	2012LPICo1679.4137E	2012LPICo1679.409
+   0E	2012EGUGA..1412258E	2012arXiv1205.0057E	2012A&amp;A...539A.113E	2012JGRB..117.3401E	2012arXiv1203.5132E	2012GCN..13457...
+   1E	2012GCN..14091...1E	2012GCN..13409...1E	2012GCN..13426...1E	2012GCN..12988...1E	2012grb..confE..86E	2012GCN..13438...
+   1E	2012GCN..13003...1E	2012GCN..12931...1E	2011AGUFM.T33A2375E	2011PhDT........40E	2011AGUFM.T34C..02E	2011arXiv1110.189
+   8E	2011PhRvL.107p8301E	2011arXiv1109.3921E	2011arXiv1109.3848E	2011arXiv1107.4860E	2011PLoSO...621194E	2011MNRAS.413.234
+   5H	2011arXiv1105.0142E	2011AcAau..68.1201E	2011Icar..212..268E	2011GeoRL..38.6305E	2011AcAau..68..441E	2011AcAau..68..38
+   9E	2011AcAau..68..399E	2011arXiv1102.3719E	2011SPIE.7896E..0EE	2011SPIE.7896E..11E	2011AcAau..68..339E	2011AcAau..68..41
+   8E	2011AcAau..68..435E	2011arXiv1101.2462E	2011GCN..11665...1E	2011GCN..11669...1E	2011GCN..11743...1E	2011GCN..12356...
+   1E	2011SMat....7.6820E	2011GCN..12353...1E	2011GCN..12366...1E	2010AGUFM.T13C2213E	2010AGUFM.S53E..01E	2010AGUFMGC23A090
+   7E
+  Untitled Library 1,0,
+  ADS Classic Library,1,2016ASSP...42...91E
+  No Description,3,1974AJ.....79.1082E	1908sscc.book.....E	1908nhu..book.....E
+</code></pre>
+</div>
+
+<p>As you can see, each value is comma separated, and bibcodes are separated by tabs. If you want this output in something different, then just change the script. The only current option via command line is to choose the output file name:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>python lib_2_csv.py --help
+usage: lib_2_csv.py <span class="o">[</span>-h] <span class="o">[</span>-s OUTPUT_FILE]
+
+optional arguments:
+  -h, --help            show this <span class="nb">help </span>message and <span class="nb">exit</span>
+  -s OUTPUT_FILE, --save-to-file OUTPUT_FILE
+                        Save my libraries to this file.
+</code></pre>
+</div>
+
+<p><strong>Note</strong>: it assumes your API token resides in the folder <code class="highlighter-rouge">~/.ads/dev_key</code>.
+You can also override it with the <code class="highlighter-rouge">TOKEN</code> variable at the top of the script.</p>
+
+    <script>
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+  loadJS("/assets/js/loader.js" );
+</script>
+
+    <footer class="jumbotron" style="margin-bottom:0; margin-top:4rem">
+      <a href="https://www.uwm.edu"><img src="/assets/imgs/logos/uwm_logomark4clr1235_transparent.png" height="45" alt="UWM logo" class="float-right"> </a>
+      <p><small>The Leonard E Parker Center for Gravitation, Cosmology and Astrophysics is supported by NASA, the National Science Foundation, the UW-Milwaukee College of Letters and Science, and the UW-Milwaukee Graduate School.</small></p>
+</footer>
+
+  </body>
+</html>

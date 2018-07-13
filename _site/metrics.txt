@@ -1,0 +1,41 @@
+Papers
+# Total Refereed
+----------------
+Number of papers  985  952
+Normalized paper count  260.2  251.9
+
+Citations
+# Total Refereed
+----------------
+Number of citing papers  23208 23175
+Total citations  54648  54433
+Number of self-citations  4994  4972
+Average citations  55.5   57.2
+Median citations  23.0  24.0
+Normalized citations  10598.5  10549.4
+Refereed citations  44798  44640
+Average refereed citations  45.5  46.9
+Median refereed citations  19.0  20.0
+Normalized refereed citations  9229.1  9196.2
+
+Indices
+Total Refereed
+--------------
+H Index  112  112 
+m--Index  2.24  2.24
+g--index  193  193
+i10--index  711  704
+i100--index  126  126
+tori index  324.1  322.7
+riq index  360  359
+read10-index  3569.4  3491.1
+    
+Reads
+# Total Refereed
+-----------------
+Total number of reads  336079  332821
+Average number of reads  341.2  349.6
+Median number of reads  176.0  189.5
+Total number of downloads  148876  147623
+Average number of downloads  151.1  155.1
+Median number of downloads  70.0  74.5

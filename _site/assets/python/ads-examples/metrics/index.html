@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+  <title>Examples of how to use the ADS API</title>
+  
+
+  <meta charset="utf-8" / />
+
+  <meta property="og:url" content="http://0.0.0.0:4000/assets/python/ads-examples/metrics/" />
+
+  <meta content="Center for Gravitation, Cosmology and Astrophysics" property="og:site_name">
+  
+    <meta content="website" property="og:type">
+  
+  
+    <meta content="Examples of how to use the ADS API" property="og:title">
+  
+  
+    <meta content="" property="og:description">
+  
+  
+    <meta content="/assets/imgs/octojekyll.jpg" property="og:image">
+  
+
+  <script>
+  !function(e){"use strict";var t=function(t,n,r){function o(e){if(i.body)return e();setTimeout(function(){o(e)})}function a(){d.addEventListener&&d.removeEventListener("load",a),d.media=r||"all"}var l,i=e.document,d=i.createElement("link");if(n)l=n;else{var s=(i.body||i.getElementsByTagName("head")[0]).childNodes;l=s[s.length-1]}var u=i.styleSheets;d.rel="stylesheet",d.href=t,d.media="only x",o(function(){l.parentNode.insertBefore(d,n?l:l.nextSibling)});var f=function(e){for(var t=d.href,n=u.length;n--;)if(u[n].href===t)return e();setTimeout(function(){f(e)})};return d.addEventListener&&d.addEventListener("load",a),d.onloadcssdefined=f,f(a),d};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this),function(e){if(e.loadCSS){var t=loadCSS.relpreload={};if(t.support=function(){try{return e.document.createElement("link").relList.supports("preload")}catch(e){return!1}},t.poly=function(){for(var t=e.document.getElementsByTagName("link"),n=0;n<t.length;n++){var r=t[n];"preload"===r.rel&&"style"===r.getAttribute("as")&&(e.loadCSS(r.href,r,r.getAttribute("media")),r.rel=null)}},!t.support()){t.poly();var n=e.setInterval(t.poly,300);e.addEventListener&&e.addEventListener("load",function(){t.poly(),e.clearInterval(n)}),e.attachEvent&&e.attachEvent("onload",function(){e.clearInterval(n)})}}}(this);
+</script>
+
+
+
+  <link rel="preload" href="/assets/css/main.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/css/main.css"></noscript>
+
+  <!--<link rel="preload" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/sandstone/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">-->
+  <!--<noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/sandstone/bootstrap.min.css"></noscript>-->
+
+  <link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"></noscript>
+
+
+
+  <!--  Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <!-- The below color will change the browser bar color on most mobile browsers -->
+  <meta name="theme-color" content="#ffffff">
+
+<script src="http://0.0.0.0:35729/livereload.js"></script></head>
+
+  <style>
+  body{width: 100%;overflow-x: hidden;}
+</style>
+
+  <body>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="index.html">
+  <img src="/assets/imgs/logos/cgca-rev-transparent.png" height="50" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/index.html">Home</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About Us
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/equity.html">Equity and diversity</a>
+          <a class="dropdown-item" href="/visitors.html">For visitors</a>
+          <a class="dropdown-item" href="/#">Positions</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/contact.html">Contact us</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          People
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="/people.html">Members</a>
+          <a class="dropdown-item" href="/faculty.html">Faculty</a>
+          <a class="dropdown-item" href="/directory.html">Directory</a>
+<!--          <a class="dropdown-item" href="#">LIGO</a>-->
+          <a class="dropdown-item" href="/former_members.html">Former members</a>
+        </div>
+      </li>
+		 <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          News & Events
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/seminars.html">Seminars</a>
+          <a class="dropdown-item" href="/news.html">Recent news</a>
+        </div>
+      </li>
+		 <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Research
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/research.html">Overview</a>
+          <a class="dropdown-item"
+href="/publications.html">Publications</a>
+          <a class="dropdown-item" href="/books.html">Books</a>
+          <a class="dropdown-item" href="/datacenter.html">Data Center</a>
+        </div>
+      </li>
+		<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Internal
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="http://www.lsc-group.phys.uwm.edu/wiki/">Wiki</a>
+          <a class="dropdown-item" href="/conference_room.html">Conference Room</a>
+        </div>
+      </li>
+      <!-- 		 <li class="nav-item"> -->
+      <!--   <a class="nav-link" href="#">Students</a> -->
+      <!-- </li> -->
+		<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Public
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/public.html">Overview</a>
+<a class="dropdown-item" href="/maker.html">MakerFaire Milwaukee</a>
+<a class="dropdown-item" href="http://www.cgca.uwm.edu/coffee/">CoffeeShop Astrophysics</a>
+          <a class="dropdown-item"
+href="http://uwm.edu/planetarium/">Manfred Olson Planetarium</a>
+          <a class="dropdown-item"
+    href="http://pulsarsearchcollaboratory.com/home/about/">Pulsar
+    Search Collaboratory</a>
+<a class="dropdown-item" href="http://einstein.phys.uwm.edu/">Einstein@Home</a>
+</li>
+    </ul>
+    <a class="navbar-brand" href="https://twitter.com/UWMCGCA">
+    <img src="/assets/imgs/logos/twitter_transparent.png" width="25" height="25" alt="Twitter"></a>
+    <a class="navbar-brand" href="https://www.facebook.com/UWMCGCA">
+    <img src="/assets/imgs/logos/facebook.png" width="25" height="25" alt="Facebook"></a>
+        <button type="button" class="btn btn-warning">Give</button>
+
+  </div>
+</nav>
+
+          <div class="jumbotron text-center" style="margin-bottom:0">
+        <div class="container">
+	  <h1><small>The Leonard E Parker</small></h1>
+          <h1>Center for Gravitation, Cosmology & Astrophysics</h1>
+	  <h2><small>at the University of Wisconsin-Milwaukee</small></h2>
+        </div>
+      </div>
+
+    <h1 id="examples-of-how-to-use-the-ads-api">Examples of how to use the ADS API</h1>
+
+<h2 id="metrics">Metrics</h2>
+<p>A tool to plot metrics for a given set of bibcodes using the ADS API. It makes printer-friendly versions of the one that you find on the ADS user interface:</p>
+
+<p><img src="https://raw.githubusercontent.com/jonnybazookatone/ads-examples/master/metrics/ui_example.png" alt="Metrics on ADS Bumblebee" /></p>
+
+<p>This tool allows you to create metrics plots in three ways:</p>
+
+<ol>
+  <li>via an ORCiD iD</li>
+  <li>via a generic ADS query</li>
+  <li>via a list of bibcodes</li>
+</ol>
+
+<p>You can generate hard copies of these plots in image or CSV format. In addition, you can create a <em>snazzy</em> PDF that includes your metric statistics, plus a head page with the ADS logo.</p>
+
+<p><em>Note</em> This tool is limit to 2000 bibcodes, as this is the limit prescribed by the ADS API (for the metrics service). If you want to do a numbers plot for a larger amount of data, then look at the <a href="https://github.com/adsabs/ads-examples/tree/master/search_facet">Search Facet tool</a>.</p>
+
+<p>Example usage:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>python plot_metrics.py --orcid 0000-0001-8043-4965 --printable --plot --save-to-file csv
+</code></pre>
+</div>
+
+<p>Makes plots like this:</p>
+
+<p><img src="https://raw.githubusercontent.com/jonnybazookatone/ads-examples/master/metrics/example.jpg" alt="Metrics example page" /></p>
+
+    <script>
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+  loadJS("/assets/js/loader.js" );
+</script>
+
+    <footer class="jumbotron" style="margin-bottom:0; margin-top:4rem">
+      <a href="https://www.uwm.edu"><img src="/assets/imgs/logos/uwm_logomark4clr1235_transparent.png" height="45" alt="UWM logo" class="float-right"> </a>
+      <p><small>The Leonard E Parker Center for Gravitation, Cosmology and Astrophysics is supported by NASA, the National Science Foundation, the UW-Milwaukee College of Letters and Science, and the UW-Milwaukee Graduate School.</small></p>
+</footer>
+
+  </body>
+</html>

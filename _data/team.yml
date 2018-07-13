@@ -16,7 +16,7 @@
   emaildomain:  gravity.phys.uwm.edu
   position:  Vis. Professor
   phone:  414-229-3323
-  office:  KIRC XXXX
+  office:  KIRC 4197
 - name:  Patrick Brady
   emailname:  patrick
   emaildomain:  gravity.phys.uwm.edu
@@ -28,13 +28,13 @@
   emaildomain:  uwm.edu
   position:  Assoc. Scientist
   phone:  414-229-XXXX
-  office:  KIRC XXXX
+  office:  KIRC 4060
 - name:  Ian Brown
   emailname:  ianbrown
   emaildomain:  uwm.edu
   position:  Grad Student
   phone:  414-229-XXXX
-  office:  KIRC XXXX
+  office:  KIRC 4064
 - name:  Phillip Chang
   emailname:  chang65
   emaildomain:  uwm.edu
@@ -46,13 +46,13 @@
   emaildomain: uwm.edu
   position: Graduate Student
   phone: 414-229-XXXX
-  office: KIRC XXXX
+  office: KIRC 4175
 - name:  Jean Creighton
   emailname:  jcreight
   emaildomain:  uwm.edu
   position:  Director of UWM Planetarium
   phone:  414-229-4961
-  office:  KIRC XXXX
+  office:  Physics 150
 - name:  Jolien Creighton
   emailname:  jolien
   emaildomain:  gravity.phys.uwm.edu
@@ -82,28 +82,28 @@
   emaildomain:  uwm.edu
   position:  Postdoc
   phone:  414-229-XXXX
-  office:  KIRC XXXX
+  office:  KIRC 4193
 - name:  Kristina Islo
   emailname:  kpislo
   emaildomain:  uwm.edu
   position:  Grad Student
   phone:  414-229-XXXX
-  office:  KIRC XXXX
+  office:  KIRC 4078
 - name:  Alina Istrate
   emailname:  istrate
   emaildomain:  uwm.edu
   position:  Postdoc
   phone:  414-229-XXXX
-  office:  KIRC XXXX
+  office:  KIRC 4092
 - name:  Shasvath Kapadia
   emailname:  kapadia
   emaildomain:  uwm.edu
   position:  Postdoc
   phone:  414-229-XXXX
-  office:  KIRC XXXX
+  office:  KIRC 4192
 - name:  David Kaplan
   emailname:  kaplan
-  emaildomain:  gravity.phys.uwm.edu
+  emaildomain:  uwm.edu
   position:  Associate Professor
   phone:  414-229-4971
   office:  KIRC 4075
@@ -124,7 +124,7 @@
   emaildomain:  uwm.edu
   position:  Assoc. Scientist
   phone:  414-229-XXXX
-  office:  KIRC XXXX
+  office:  KIRC 4191
 - name:  Gracie Liebenstein
   emailname:  cgca-travel
   emaildomain:  uwm.edu
@@ -136,31 +136,37 @@
   emaildomain:  uwm.edu
   position:  Grad Student
   phone:  414-229-XXXX
-  office:  KIRC XXXX
+  office:  KIRC 4064
 - name:  Ignacio Magana Hernandez
   emailname:  maganah2
   emaildomain:  uwm.edu
   position:  Grad Student
   phone:  414-229-XXXX
-  office:  KIRC XXXX
+  office:  KIRC 4088
 - name:  Michael Manske
   emailname:  michael.manske
   emaildomain:  ligo.org
   position:  Assoc. Scientist
   phone:  414-229-XXXX
-  office:  KIRC XXXX
+  office:  KIRC 4198
 - name:  Heidi Matera
   emailname:  matera
   emaildomain:  uwm.edu
   position:  Asst. Director
   phone:  414-229-4960
   office:  KIRC 4096
+- name: Alex McEwen
+  emailname: aemcewen
+  emaildomain: uwm.edu
+  position: Graduate Student
+  phone: 414-229-XXXX
+  office: KIRC 4064
 - name:  Casey McGrath
   emailname:  mcgrathc
   emaildomain:  uwm.edu
   position:  Grad Student
   phone:  414-229-XXXX
-  office:  KIRC XXXX
+  office:  KIRC 4064
 - name:  Adam Mercer
   emailname:  ram
   emaildomain:  gravity.phys.uwm.edu
@@ -172,7 +178,7 @@
   emaildomain:  uwm.edu
   position:  Grad Student
   phone:  414-229-XXXX
-  office:  KIRC XXXX
+  office:  KIRC 4064
 - name:  Chris Pankow
   emailname:  pankow
   emaildomain:  gravity.phys.uwm.edu
@@ -190,13 +196,31 @@
   emaildomain:  uwm.edu
   position:  Professor
   phone:  414-229-6437
-  office:  KIRC XXXX
+  office:  KIRC 4097
+- name: Brandon Piotrzkowski               
+  emailname: piotrzk3
+  emaildomain: uwm.edu
+  position: Graduate Student
+  phone: 414-229-XXXX
+  office: KIRC 4088
 - name:  Tanner Prestegard
   emailname:  prestega
   emaildomain:  uwm.edu
   position:  Assoc. Scientist
   phone:  414-229-XXXX
-  office:  KIRC XXXX
+  office:  KIRC 4193
+- name: Logan Prust
+  emailname: ljprust
+  emaildomain: uwm.edu
+  position: Graduate Student
+  phone: 414-229-XXXX
+  office: KIRC 4088
+- name: Caitlin Rose
+  emailname: carose
+  emaildomain: uwm.edu
+  position: Graduate Student
+  phone: 414-229-XXXX
+  office: KIRC 4088
 - name:  Xavier Siemens
   emailname:  siemens
   emaildomain:  gravity.phys.uwm.edu
@@ -208,19 +232,19 @@
   emaildomain:  uwm.edu
   position:  Postdoc
   phone:  414-229-XXXX
-  office:  KIRC XXXX
+  office:  KIRC 4092
 - name:  Eric Van Oeveren
   emailname:  vanoeve2
   emaildomain:  uwm.edu
   position:  Grad Student
   phone:  414-229-XXXX
-  office:  KIRC XXXX
+  office:  KIRC 4175
 - name:  Angie Van Sistine
   emailname:  vansisti
   emaildomain:  uwm.edu
   position:  Scientist
   phone:  414-229-XXXX
-  office:  KIRC XXXX
+  office:  KIRC 4074
 - name:  Aaron Viets
   emailname:  adviets
   emaildomain:  uwm.edu
@@ -238,7 +262,7 @@
   emaildomain:  ligo.org
   position:  Postdoc
   phone:  414-229-XXXX
-  office:  KIRC XXXX
+  office:  KIRC 4056
 - name:  Alan Wiseman
   emailname:  agw
   emaildomain:  gravity.phys.uwm.edu
@@ -250,4 +274,4 @@
   emaildomain:  uwm.edu
   position:  Grad Student
   phone:  414-229-XXXX
-  office:  KIRC XXXX
+  office:  KIRC 4175

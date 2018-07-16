@@ -50,6 +50,8 @@
       url: /books.html
     - title: Data Center
       url: /datacenter.html
+    - title: For Students
+      url: /students.html
 - title: Internal
   group: Internal
   sublinks:

@@ -2,7 +2,7 @@
   <div class="row">
     {% for t in site.data.team %}
     <div class="col-lg-3 team-member">
-      <img class="rounded-circle" src="assets/imgs/people/{{t.emailname}}.png" alt="Generic placeholder image" height="120">
+      <a href="{{t.url}}"><img class="rounded-circle" src="assets/imgs/people/{{t.emailname}}.png" alt="Generic placeholder image" height="120"></a>
       <h4>{{t.name}}</h4>
       <p>{{t.position}}</p>
       <p>{{t.office}}</p>

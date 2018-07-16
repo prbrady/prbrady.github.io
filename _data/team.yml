@@ -71,6 +71,7 @@
   position:  Associate Professor
   phone:  414-229-3654
   office:  KIRC 4087
+  url: http://cgca.uwm.edu/~dawn/
 - name:  John Friedman
   emailname:  friedman
   emaildomain:  uwm.edu
@@ -107,6 +108,7 @@
   position:  Associate Professor
   phone:  414-229-4971
   office:  KIRC 4075
+  url: http://cgca.uwm.edu/~kaplan/
 - name:  Antonia Klein
   emailname:  kleinac
   emaildomain:  uwm.edu
@@ -255,8 +257,8 @@
   emailname:  vigeland
   emaildomain:  uwm.edu
   position:  Postdoc
-  phone:  414-229-XXXX
-  office:  KIRC XXXX
+  phone:  414-229-2245
+  office:  KIRC 4056
 - name:  Sinead Walsh
   emailname:  sinead.walsh
   emaildomain:  ligo.org

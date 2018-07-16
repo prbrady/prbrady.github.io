@@ -1,4 +1,4 @@
-#Jekyll Bootstrap Carousel Landing Page
+# Jekyll Bootstrap Carousel Landing Page
 
 Build from [Jekyll Bootstrap Starter Template](https://github.com/thauvette/jekyll-bootstrap-starter-template)
 
@@ -43,6 +43,26 @@ I like to put any important styles in the `_inludes/prority-css.html` file. This
 
 Use [Favicon Generator](https://realfavicongenerator.net/) to generate your own favicon. Replace all the files in the root folder with the ones it generates for you. The theme colour can be changed in the `_includes/head.html` file.
 
+## Installation on a Mac
+
+After some experimentation I found that this worked if I used the macports version of ruby and did the gem install into my local folder.
+
+```
+sudo port install ruby25
+sudo port select ruby ruby25
+setenv GEM_HOME /Users/dlk/.gem
+gem install bundler
+gem install jekyll
+gem install pkg-config
+
+~/.gem/bin/bundle install
+```
+
+and then I could run:
+
+```
+~/.gem/bin/bundle exec jekyll serve
+```
 ## Props and Thanks to...
 * Filament Group's [LoadJS](https://github.com/filamentgroup/loadJSFilament) and
 [LoadCSS](https://github.com/filamentgroup/loadCSS)
@@ -51,3 +71,4 @@ Use [Favicon Generator](https://realfavicongenerator.net/) to generate your own 
 * [tiny png](https://tinypng.com/) for png compression
 * [Favicon Generator](https://realfavicongenerator.net/)
 [Bootstrap 4](https://getbootstrap.com/)
+* [Recipe to get active link highlighting](https://mycyberuniverse.com/web/jekyll-bootstrap-dynamic-navigation-highlighting-active-element.html)

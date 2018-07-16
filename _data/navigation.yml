@@ -1,10 +1,12 @@
 # modified from
 # https://mycyberuniverse.com/web/jekyll-bootstrap-dynamic-navigation-highlighting-active-element.html
-# I found that I needed the URL on the top-level items to contain all of the items below so that
-# the top item would be active
+# add in a "group" key for each item that should match the "group" for the sub-pages
+# to get the top-level link to be active
 - title: Home
+  group: Home
   url: /index.html
 - title: About Us
+  group: AboutUs
   url: /contact.html
   sublinks:
     - title: Equity and Diversity
@@ -17,7 +19,8 @@
     - title: Contact us
       url: /contact.html
 - title: People
-  url: /people.html /faculty.html /directory.html /former_members.html
+  group: People
+  url: /people.html
   sublinks:
     - title: Members
       url: /people.html
@@ -28,14 +31,16 @@
     - title: Former members
       url: /former_members.html
 - title: News & Events
-  url: /seminars.html /news.html
+  group: News&Events
+  url: /seminars.html
   sublinks:
     - title: Seminars
       url: /seminars.html
     - title: Recent news
       url: /news.html
 - title: Research
-  url: /research.html /publications.html /books.html /datacenter.html
+  group: Research
+  url: /research.html
   sublinks:
     - title: Overview
       url: /research.html
@@ -46,13 +51,15 @@
     - title: Data Center
       url: /datacenter.html
 - title: Internal
+  group: Internal
   sublinks:
     - title: Wiki
       url: http://www.lsc-group.phys.uwm.edu/wiki/
     - title: Conference Room
       url: /conference_room.html
 - title: For the Public
-  url: /public.html /maker.html
+  group: ForthePublic
+  url: /public.html
   sublinks:
     - title: Overview
       url: /public.html

@@ -8,9 +8,9 @@
       {% else %}
         <h4>{{t.name}}</h4>
       {% endif %}
-      <p>{{t.position}}</p>
-      <p>{{t.office}}</p>
-      <p>{{t.phone}}</p>
+      <p>{{t.position}}<br>
+      {{t.office}}<br>
+      {{t.phone}}</p>
       <p><a class="btn btn-secondary" href="javascript:address('{{t.emailname}}', '{{t.emaildomain}}')" role="button">Email »</a></p>
     </div>
     {% endfor %}

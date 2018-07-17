@@ -1,0 +1,96 @@
+---
+layout: default
+title: Center for Gravitation, Cosmology and Astrophysics
+description: We push the frontiers of astrophysics through the novel use of observation, theory, and computation. 
+group: Home
+img: /assets/imgs/carousel/galaxy.jpg
+maxposts: 5
+---
+<!-- auto-generate the carousel out of the blog posts -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    {% for post in site.posts %}
+      {% if forloop.index == page.maxposts %}
+        {% break %}
+      {% endif %}
+      {% assign slidenum = forloop.index | minus: 1 %}
+      {% if forloop.index == 1 %}
+        <li data-target="#carouselExampleIndicators" data-slide-to="{{ slidenum }}" class="active"></li>
+      {% else %}
+        <li data-target="#carouselExampleIndicators" data-slide-to="{{ slidenum }}"></li>
+      {% endif %}
+    {% endfor %}
+	
+  </ol>
+  <div class="carousel-inner">
+    {% for post in site.posts %}
+      {% if forloop.index == page.maxposts %}
+        {% break %}
+      {% endif %}
+
+      {% if forloop.index == 1 %}
+        <div class="carousel-item active" style="background:url('{{page.img}}')">
+      {% else %}
+        <div class="carousel-item" style="background:url('{{page.img}}')">
+      {% endif %}
+          <div class="backdrop"></div>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>{{post.heading}}</h1>
+              <p>
+              {{post.lead}}
+              </p>
+              <p>
+              <a href="{{post.url}}" class="btn btn-lg btn-primary">Learn More</a>
+              </p>
+            </div>
+          </div>
+        </div>
+    {% endfor %}
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+<div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+	      <div class="col-lg-4">
+            <h2>Projects</h2>
+            <ul class="list-group list-group-flush">
+			  <li class="list-group-item"><a href="https://www.ligo.caltech.edu/">LIGO</a></li>
+			  <li class="list-group-item"><a href="http://nanograv.org">NANOGrav</a</li>
+			  <li class="list-group-item"><a href="http://einstein.phys.uwm.edu">Einstein@Home</a></li>
+			  <li class="list-group-item"><a href="https://ztf.caltech.edu/">ZTF</a></li>
+			  <li class="list-group-item">RNS</li>
+			  <li class="list-group-item"><a href="http://www.gravity.phys.uwm.edu/arcc">ARCC</a></li>
+			  <li class="list-group-item"><a href="http://cgca.uwm.edu/mke-uo/">Urban Observatory</a></li>
+				  </ul>
+			  <p></p>
+            <p><a class="btn btn-secondary" href="research.html" role="button">Learn more &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->						        
+			
+          <div class="col-lg-4">
+            <h2><a href="seminars.html">Seminars</a></h2>
+            <div class="col_item">
+			  <iframe src="https://www.google.com/calendar/embed?title=&nbsp;&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=300&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=gdijegluevqt45fphbf6nie06o%40group.calendar.google.com&ctz=America/Chicago" style="border: 0" width="300" height="400" frameborder="0" scrolling="no"></iframe>
+			</div>
+          </div><!-- /.col-lg-4 -->
+			
+	      <div class="col-lg-4">
+            <h2>Updates</h2>
+            <a class="twitter-timeline" data-width="300" data-height="400" href="https://twitter.com/UWMCGCA?ref_src=twsrc%5Etfw">Tweets by UWMCGCA</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div><!-- /.col-lg-4 -->
+
+        </div><!-- /.row -->
+
+     </div><!-- /.container -->
+

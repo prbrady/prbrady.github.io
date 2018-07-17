@@ -17,6 +17,7 @@ group: News&Events
           {% if mod == 1 %}
             <div class="col-md-7 order-md-1">
               <h2 class="featurette-heading">{{ post.date | date: '%B %d, %Y' }}: <span class="text-muted">{{ post.heading }}</span></h2>
+              <p class="lead">{{ post.lead }}</p>
               <p><a class="btn btn-lg btn-primary" href="{{ post.url }}" role="button">Read more</a></p>
 
             </div>
@@ -26,6 +27,7 @@ group: News&Events
           {% else %}
             <div class="col-md-7 order-md-2">
               <h2 class="featurette-heading">{{ post.date | date: '%B %d, %Y' }}: <span class="text-muted">{{ post.heading }}</span></h2>
+              <p class="lead">{{ post.lead }}</p>
               <p><a class="btn btn-lg btn-primary" href="{{ post.url }}" role="button">Read more</a></p>
 
             </div>

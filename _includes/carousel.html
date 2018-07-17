@@ -1,27 +1,36 @@
+<!-- auto-generate the carousel out of the blog posts -->
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    {% for post in site.posts limit:page.maxposts %}
+      {% assign slidenum = forloop.index | minus: 1 %}
+      {% if forloop.index == 1 %}
+        <li data-target="#carouselExampleIndicators" data-slide-to="{{ slidenum }}" class="active"></li>
+      {% else %}
+        <li data-target="#carouselExampleIndicators" data-slide-to="{{ slidenum }}"></li>
+      {% endif %}
+    {% endfor %}
+	
   </ol>
   <div class="carousel-inner">
-    {% for feature in page.features %}
-      {% if forloop.index == 1 %} <div class="carousel-item active" style="background:url('{{feature.img}}')"> {% else %} <div class="carousel-item" style="background:url('{{feature.img}}')"> {% endif %}
-        <div class="backdrop"></div>
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>{{feature.title}}</h1>
-            <p>
-              {{feature.text}}
-            </p>
-            <p>
-              <a href="{{feature.link}}" class="btn btn-lg btn-primary">Learn More</a>
-            </p>
+    {% for post in site.posts limit:page.maxposts %}
+      {% if forloop.index == 1 %}
+        <div class="carousel-item active" style="background:url('{{page.img}}')">
+      {% else %}
+        <div class="carousel-item" style="background:url('{{page.img}}')">
+      {% endif %}
+          <div class="backdrop"></div>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>{{post.heading}}</h1>
+              <p>
+              {{post.lead}}
+              </p>
+              <p>
+              <a href="{{post.url}}" class="btn btn-lg btn-primary">Learn More</a>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
     {% endfor %}
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

@@ -63,6 +63,12 @@ and then I could run:
 ```
 ~/.gem/bin/bundle exec jekyll serve
 ```
+## Embedded seminar schedule
+
+The seminar schedule is a customizable embedded widget from [feedwind](https://feed.mikle.com/).
+Contact Dawn for login info to modify.
+
+
 ## Props and Thanks to...
 * Filament Group's [LoadJS](https://github.com/filamentgroup/loadJSFilament) and
 [LoadCSS](https://github.com/filamentgroup/loadCSS)
